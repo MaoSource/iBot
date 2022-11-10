@@ -1,0 +1,5 @@
+server:
+  port: 83
+spring:
+  application:
+    name: iBot
