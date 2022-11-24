@@ -1,7 +1,9 @@
 package com.source.utils;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.
@@ -35,5 +37,11 @@ public class DateUtil {
      */
     public static String formatFullTime(LocalDateTime localDateTime) {
         return formatFullTime(localDateTime, FULL_TIME_PATTERN);
+    }
+
+    public static String getDate() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMM");
+
+        return dateFormat.format(new Date());
     }
 }

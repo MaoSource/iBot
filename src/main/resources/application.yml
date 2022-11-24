@@ -3,3 +3,43 @@ server:
 spring:
   application:
     name: iBot
+  redis:
+    database: 0
+    host: redis地址
+    port: 6379
+    lettuce:
+      pool:
+        min-idle: 8
+        max-idle: 500
+        max-active: 2000
+        max-wait: 10000
+    timeout: 5000
+    password: redis密码
+
+  # OneBot Mirai地址
+  url:
+  # 管理员的QQ号
+  admin-qq-id:
+  # cqhttp token
+  admin-qq-token:
+  # 日志发送到哪个群 -1:不发送 -2:发送给管理员
+  log-group-id:
+
+tao_poly_city:
+  headers: "{
+      'User_Agent': 'PolyCity/4.4.2 (iPhone; iOS 15.1; Scale/3.00)',
+      'Accept': 'application/json, text/plain, */*',
+      'Content_Type': 'application/json;charset=UTF-8',
+      'Connection': 'keep-alive',
+      'Host': 'comm.ams.game.qq.com',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'Accept-Language': 'zh-Hans-CN;q=1, en-CN;q=0.9',
+      'Charset': 'UTF-8',
+
+      'Referer': 'https://daoju.qq.com/index.shtml'
+    }"
+qq:
+  app_id: 716027609
+  daid: 5
+  u1: https%3A%2F%2Fgraph.qq.com%2Foauth2.0%2Flogin_jump
+  pt_3rd_aid: 101487368
