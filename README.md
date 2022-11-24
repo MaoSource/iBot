@@ -95,7 +95,7 @@ docker run -d \
 >   -p 83:83 \
 >   --network=host \
 >   --restart=always \
->   --name ibot ibot:latest
+>   --name ibot maosource/ibot:1.0.2
 > ```
 >
 > 
