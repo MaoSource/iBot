@@ -48,7 +48,7 @@ spring:
         max-wait: 10000
     timeout: 5000
     password: redis密码
-
+app-config:
   # OneBot Mirai地址
   url:
   # 管理员的QQ号
@@ -91,11 +91,11 @@ docker run -d \
 > 例如：
 > ```dockerfile
 > docker run -d \
->   -v  /source/iBot/config:/iBot/config \
+>   -v /source/iBot/config:/iBot/config \
 >   -p 83:83 \
 >   --network=host \
 >   --restart=always \
->   --name ibot maosource/ibot:1.0.2
+>   --name ibot maosource/ibot:1.0.3
 > ```
 >
 > 
