@@ -93,7 +93,6 @@ docker run -d \
 > docker run -d \
 >   -v /source/iBot/config:/iBot/config \
 >   -p 83:83 \
->   --network=host \
 >   --restart=always \
 >   --name ibot maosource/ibot:1.0.3
 > ```
