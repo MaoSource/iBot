@@ -18,7 +18,6 @@ import javax.annotation.Resource;
 @Slf4j
 public class BotService {
 
-    private static final String GROUP = "group";
     @Resource
     private MessageFactory messageFactory;
 

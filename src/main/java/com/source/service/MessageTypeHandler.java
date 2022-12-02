@@ -20,6 +20,7 @@ public interface MessageTypeHandler{
     /**
      * 消息处理
      * @param message 消息对象
+     * @param msg 消息内容
      */
     void message(Message message, String msg);
 }
